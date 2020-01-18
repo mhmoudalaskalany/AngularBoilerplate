@@ -1,0 +1,81 @@
+<div class="layout-topbar">
+  <div class="layout-topbar-content">
+    <a href="#" id="menu-btn" class="menu-btn" (click)="onMobileMenuButton($event)">
+      <i class="fa fa-bars"></i>
+    </a>
+    <img src="assets/layout/images/logo.png" class="topbar-logo">
+
+    <!-- <a [routerLink]="['/documentation']" class="topbar-link" (click)="hideMobileMenu($event)">Get Started</a> -->
+  </div>
+</div>
+<div class="layout-sidebar" [ngClass]="{'layout-sidebar-active':mobileMenuActive}">
+  <ul class="layout-menu" (click)="hideMobileMenu($event)">
+    <li>
+      <a [routerLink]="['/main/lookup/test']" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+        <i class="fa fa-globe"></i>
+        <span>Test</span>
+      </a>
+    </li>
+    <li>
+      <a [routerLink]="['/main/lookup/country']" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+        <i class="fa fa-globe"></i>
+        <span>Country</span>
+      </a>
+    </li>
+    <li>
+      <a [routerLink]="['/main/lookup/holidayDates']" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+        <i class="fa fa-globe"></i>
+        <span>Holiday Dates</span>
+      </a>
+    </li>
+    <li>
+      <a [routerLink]="['/data']" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+        <i class="fa fa-table"></i>
+        <span>Data</span>
+      </a>
+    </li>
+    <li>
+      <a [routerLink]="['/panels']" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+        <i class="fa fa-columns"></i>
+        <span>Panel</span>
+      </a>
+    </li>
+    <li>
+      <a [routerLink]="['/overlays']" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+        <i class="fa fa-window-maximize"></i>
+        <span>Overlay</span>
+      </a>
+    </li>
+    <li>
+      <a [routerLink]="['/menus']" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+        <i class="fa fa-bars"></i>
+        <span>Menu</span>
+      </a>
+    </li>
+    <li>
+      <a [routerLink]="['/charts']" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+        <i class="fa fa-pie-chart"></i>
+        <span>Charts</span>
+      </a>
+    </li>
+    <li>
+      <a [routerLink]="['/file']" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+        <i class="fa fa-folder"></i>
+        <span>File</span>
+      </a>
+    </li>
+    <li>
+      <a [routerLink]="['/messages']" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+        <i class="fa fa-comments"></i>
+        <span>Messages</span>
+      </a>
+    </li>
+    <li>
+      <a [routerLink]="['/misc']" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+        <i class="fa fa-gear"></i>
+        <span>Misc</span>
+      </a>
+    </li>
+  </ul>
+
+</div>

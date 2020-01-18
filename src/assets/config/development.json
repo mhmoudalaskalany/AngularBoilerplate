@@ -1,0 +1,8 @@
+{
+
+    "host": "http://localhost/api/api/",
+
+    "hostLocal": "http://localhost/api/api/",
+    "hostQc": "http://192.168.3.250/api/api/",
+    "hostPublic": "http://41.41.31.78/api/api/"
+}

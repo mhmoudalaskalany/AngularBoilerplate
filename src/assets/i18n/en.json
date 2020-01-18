@@ -1,0 +1,379 @@
+{
+    "HOME": {
+      "TITLE": "Hello Angular {{value}}",
+      "SELECT": "Change language",
+      "columnName": {
+        "fixedColumnName": {
+          "indexColumn": "No.",
+          "editCoLumn": "Edit"
+        }
+      }
+    },
+    "lookup": {
+      "id": "Id",
+      "country": "Country",
+      "code": "Country Code",
+      "nameFl": "English Name",
+      "nameSl": "Arabic Name",
+      "createdDate": "Creation Date",
+      "active": "Active",
+      "title":"Countries"
+    },
+    "groups": {
+      "id": "Id",
+      "code": "Code",
+      "groupFl": "Group Fl",
+      "groupSl": "Group Sl",
+      "active": "Active",
+      "title": "Groups"
+    },
+    "adminmanger": {
+      "number": "Employee NO",
+      "adminname": "Admin Level",
+      "civilid": "Civil Id",
+      "employeename": "Emp Name",
+      "startdate": "Start Date",
+      "enddate": "End Date"
+    },
+    "usermangments": {
+      "employeeNO": "Employee NO",
+      "employeeNameSl": "Employee Name Sl",
+      "groupNameSL": "Group Name SL",
+      "active": "Active",
+      "expireDate": "Expire Date",
+      "title": "User Management"
+    },
+    "employees": {
+      "employeeNumber": "Employee Number",
+      "employeeName": "Employee Name",
+      "civilId": "Civil Id",
+      "genderName": "Gender Name",
+      "startDate": "Start Date",
+      "serviceName": "Service Name",
+      "title": "Employees"
+    },
+    "fixedDuties": {
+      "dutyTypeName": "Duty Type Name",
+      "dutyDescriptionFl": "Duty Description Fl",
+      "dutyDescriptionSl": "Duty Description Sl",
+      "hasHoliday": "Has Holiday",
+      "includeOverTime": "Include OverTime",
+      "fixedDuty": "Fixed Duty"
+    },
+    "freeDuties": {
+      "dutyTypeName": "Duty Type Name",
+      "dutyDescriptionFl": "Duty Description Fl",
+      "dutyDescriptionSl": "Duty Description Sl",
+      "hasHoliday": "Has Holiday",
+      "includeOverTime": "Include OverTime",
+      "freeDuty": "Free Duty"    
+    },
+    "emergencyAllowances": {
+      "typeLocationOrDepartment": "Type Location Or Department",
+      "description": "Description",
+      "exemption": "Exemption",
+      "startDate": "Start Date",
+      "endDate": "End Date",
+      "emergencyAllowances":"Emergency Allowances",
+      "emergencyAllowance":"Emergency Allowance"
+    },
+    "employeePermissions": {
+      "employeeNumber": "Employee Number",
+      "employeeName": "Employee Name",
+      "civilId": "Civil Id",
+      "permissionType": "Permission type",
+      "permissionDate": "Permission Date",
+      "startTime": "Start Time",
+      "endTime": "End Time",
+      "employeePermissions":"Employee Permissions",
+      "employeePermission":"Employee Permission"
+    },
+    "employeeLeaves": {
+      "employeeNumber": "Employee Number",
+      "employeeName": "Employee Name",
+      "civilId": "Civil Id",
+      "leaveType": "Leave type",
+      "startDate": "Start Date",
+      "endDate": "End Date",
+      "period": "Period",
+      "balance": "Balance",
+      "title": "Employee Leaves"
+    },
+    "employeeAlowances": {
+      "employeeNumber": "Employee Number",
+      "employeeNameFl": "Employee Name Fl",
+      "civilId": "Civil Id",
+      "allowanceNameSl": "Allowance Name Sl",
+      "startDate": "Start Date",
+      "endDate": "End Date",
+      "allowanceIn": "Allowance In",
+      "allowanceOut": "Allowance Out",
+      "daysFl": "Days Fl",
+      "title": "Employee Allowance"
+    },
+    "rotatedDuties": {
+      "code": "Code",
+      "rotatedDescriptionFl": "Rotated Description Fl",
+      "rotatedDescriptionSl": "Rotated Description Sl",
+      "includeOverTime": "Include Over Time",
+      "startTime": "Start Time",
+      "endTime": "End Time",
+      "allowanceIn": "Allowance In",
+      "allowanceOut": "Allowance Out",
+      "allowBreak": "Allow Break",
+      "rotatedDuties": "Rotated Duties",
+      "rotatedDuty": "Rotated Duty"
+    },
+    "fullDayPermissions": {
+      "code": "Code",
+      "fulldayPermissionFL": "Fullday Permission FL",
+      "fulldayPermissionSL": "Fullday Permission SL",
+      "fullDayPermissions":"Full Day Permissions"
+    },
+    "countries": {
+      "code": "Code",
+      "nameFl": "Name Fl",
+      "nameSl": "Name Sl"
+    },
+    "religion": {
+      "code": "Code",
+      "descriptionFl": "Description Fl",
+      "descriptionSl": "Description Sl",
+      "religion":"Religions"
+    },
+    "contractTypes": {
+      "contractTypeFL": "Contract Type FL",
+      "contractTypeSL": "Contract Type SL",
+      "contractTypes" :"Contract Types"
+    },
+    "PartialPermissionTypes": {
+      "code": "Code",
+      "partialPermissionFL": "Partial Permission FL",
+      "partialPermissionSL": "Partial Permission SL",
+      "countryName": "Country Name",
+      "balance": "Balance",
+      "numberPerMonth": "Number Per Month",
+      "period": "Period",
+      "calculatePermissionDutyAllowance": "Calculate Permission Duty Allowance",
+      "calculatePermissionDutyAllowanceCancelInRamadan": "Calculate Permission Duty Allowance Cancel In Ramadan",
+      "calculatePermissionEmployeeAllowances": "Calculate Permission Employee Allowances",
+      "calculatePermissionEmployeeAllowancesCancelInRamadan": "Calculate Permission Employee Allowances Cancel In Ramadan",
+      "PartialPermissionTypes":"Partial Permission Types"
+    },
+    "overtimeDates": {
+      "startDate": "Start Date",
+      "endDate": "End Date",
+      "overtimeDates":"Over Time Dates"
+    },
+    "locations": {
+      "code": "Code",
+      "locationFL": "Location FL",
+      "locationSL": "Location SL",
+      "description": "Description",
+      "countryName": "Country Name",
+      "locations":  "Locations"
+    },
+    "leaveRegulations": {
+      "leaveNameFl": "Leave Name Fl",
+      "leaveNameSl": "Leave Name Sl",
+      "countryName": "Country Name",
+      "balancePerYear": "Balance Per Year",
+      "leaveTypeName": "Leave Type Name"
+    },
+    "dutysettings": {
+      "startDate": "Start Date",
+      "endDate": "End Date",
+      "dutyStatusName": "Duty Status Name",
+      "startTime": "Start Time",
+      "endTime": "End Time",
+      "weekEndName": "WeekEnd Name",
+      "restDayName": "Rest Day Name",
+      "allowanceIn": "Allowance In",
+      "allowanceOut": "Allowance Out",
+      "allowLaunch": "Allow Lunch",
+      "allowHalfDay": "Allow HalfDay"
+    },
+    "employeeFulldayPermissions": {
+      "employeeNumber": "Employee Number",
+      "employeeNameFl": "Employee Name Fl",
+      "civilId": "Civil Id",
+      "fulldayPermissionNameSl": "Fullday Permission Name Sl",
+      "startDate": "Start Date",
+      "endDate": "End Date",
+      "daysFl": "Days Fl",
+      "title": "Employee fullday permission"
+    },
+    "holidayDates": {
+      "holidayName": "Holiday Name",
+      "startDate": "Start Date",
+      "endDate": "End Date",
+      "countryName": "Country Name",
+      "holidayDates":"holidayDates"
+    },
+    "holidays": {
+      "code": "Code",
+      "publicHolidayNameFL": "Public Holiday Name FL",
+      "publicHolidayNameSL": "Public Holiday Name SL",
+      "holidays":"Holidays"
+    },
+    "jobDegrees": {
+      "code": "Code",
+      "jobDegreeFL": "Job Degree FL",
+      "jobDegreeSL": "Job Degree SL",
+      "jobDegrees":"Job Degrees"
+    },
+    "jobs": {
+      "code": "Code",
+      "jobFL": "Job FL",
+      "jobSL": "Job SL",
+      "exemptionFromFingerprint": "Exemption From Fingerprint",
+      "jobs":"Jobs"
+    },
+    "lateRegulations": {
+      "startDate": "Start Date",
+      "endDate": "End Date",
+      "lateRegulationFL": "Late Regulation FL",
+      "lateRegulationSL": "Late Regulation SL",
+      "deductionGroupTypeName": "Deduction Group Type Name"
+    },
+    "nationalities": {
+      "code": "Code",
+      "nationalityFL": "Nationality FL",
+      "nationalitySL": "Nationality SL",
+      "nationalities":"Nationalities"
+    },
+    "qualifications": {
+      "qualificationTypeFl": "Qualification Type Fl",
+      "qualificationTypeSl": "Qualification Type Sl",
+      "qualifications":"qualifications"
+    },
+    "allowances": {
+      "allowanceTypeNameSl": "Allowance Type Name Sl",
+      "allowanceNameFl": "Allowance Name Fl",
+      "allowanceNameSl": "Allowance Name Sl"
+    },
+    "teams": {
+      "code": "Code",
+      "teamNameFl": "Team Name Fl",
+      "teamNameSl": "Team Name Sl",
+      "teamDetails": "Team Employees Details",
+      "team": "Teams",
+      "employeeNumber": "Employees Number"
+    },
+    "employeeDuties": {
+      "employeeNameFl": "Employee Name",
+      "dutyTypeNameFl": "Duty Type",
+      "dutyNameFl": "Duty Name",
+      "startDate": "Start Date",
+      "endDate": "End Date",
+      "employeeDuty": "Employee Duty",
+      "employeeNumber": "Employees Number"
+    },
+    "leavetypes": {
+      "code": "Code",
+      "leaveTypeFL": "Leave Type Fl",
+      "leaveTypeSL": "Leave Type SL",
+      "leavetypes":"Leave Types"
+    },
+    "previousLeavesBalances": {
+      "employeeNumber": "Employee Number",
+      "employeeNameFl": "Employee Name Fl",
+      "leaveNameFl": "Leave Name Fl",
+      "previousBalance": "Previous Balance",
+      "year": "Year",
+      "previousLeavesBalances": "previous Leaves Balances",
+      "previousLeavesBalance": "previous Leaves Balance"
+    },
+    "allowanceSettings": {
+      "startDate": "Start Date",
+      "endDate": "End Date",
+      "replaceDutyAllowanceIn": "Replace Duty Allowance In",
+      "replaceDutyAllowanceOut": "Replace Duty Allowance Out",
+      "mergingAllowances": "Merging Allowances",
+      "cancelInRamadan": "Cancel In Ramadan",
+      "notes": "Notes"
+    },
+    "EmployeeLogSheet": {
+      "employeeNumber": "Employee Number",
+      "logDatetime": "Log Datetime",
+      "event": "Event",
+      "terminalName": "Terminal Name",
+      "serialNumber": "Serial Number",
+      "notes": "Notes",
+      "employeeLogSheet":"Employee Log Sheet"
+    },
+    "employeeProfiles": {
+      "name": "Name",
+      "startDate": "Start Date",
+      "endDate": "End Date"
+    },
+    "employeeLogManual": {
+      "employeeNumber": "Employee Number",
+      "employeeName": "Employee Name",
+      "civilId": "Civil Id",
+      "logType": "Log Type",
+      "logDate": "Log Date",
+      "logTime": "Log Time",
+      "employeeLogManual":"Employee Log Manual"
+    },
+    "organizations": {
+      "organizationNameSl": "Organization NameSl",
+      "nickName": "Nick Name",
+      "registrationEmail": "Registration Email"
+    },
+    "hourlyRotated": {
+      "code": "Group code",
+      "groupnamefl": "Group Name(fl)",
+      "groupnamesl": "Group Name(sl)",
+      "startdate": "Start Date",
+      "enddate": "End Date",
+      "starttime": "Start Time",
+      "workinghours": "Working Hours",
+      "resthours": "Rest Hours",
+      "title": "Hourly Rotated"
+    },
+    "dailyRotatedSchedules": {
+      "code": "Group code",
+      "groupDescriptionFl": "Group Description Fl",
+      "groupDescriptionSl": "Group Description Sl",
+      "startDate": "Start Date",
+      "endDate": "End Date",
+      "note": "Note",
+      "title": "Daily Rotated Schedules"
+    },
+    "search": "Search",
+    "Id": "Id",
+    "id": "Id",
+    "All": "All",
+    "all": "All",
+    "actions": "Actions",
+    "Actions": "Actions",
+    "Date": "Choose Date",
+    "serial": "serial",
+    "noData": "No records found",
+    "addNew": "add new",
+    "selectColumn": "select column",
+    "exporttrans": "Export",
+    "edit": "Edit",
+    "details": "View details",
+    "deletetrans": "Delete",
+    "tableNameDir": "col-lg-6 text-left",
+    "tableIconDir": "col-lg-6 text-right",
+    "tableClass": "tableClassLeft",
+    "dateformat": "d/M/y",
+    "checked": "Checked",
+    "unChecked": "UnChecked",
+    "dir": "ltr",
+    "float": "floatleft",
+    "saveclose": "Save & Close",
+    "save": "Save",
+    "DeleteHeader": "Delete Confirmation",
+    "DeleteBody": "Do You Want To Delete ?",
+    "no": "No",
+    "yes": "Yes",
+    "textAlign": "",
+    "savesuccessfully": "Data saved successfully",
+    "updatesuccessfully": "Data updated successfully",
+    "deletesuccessfully": "Data deleted successfully",
+    "note": "Notes"
+  }

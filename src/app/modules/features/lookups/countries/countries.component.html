@@ -1,0 +1,11 @@
+<div relative>
+    <app-data-table [url]="{
+        getAll: 'countries/GetAllPaged',
+        delete:'countries/delete'
+      }"  [id]="'id'" [columns]="columns" [actions]="actions" [options]="{
+          globalSearch: true,
+          details: false
+        }" [tableData]="tableData" (add)="add($event)" (viewDetail)="viewDetail($event)">
+      </app-data-table>
+</div>
+

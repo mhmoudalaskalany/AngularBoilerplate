@@ -1,0 +1,46 @@
+<div class="p-grid p-dir-col dialog-content" [formGroup]="form">
+  <div class="p-col">
+    <div>
+      <span class="ui-float-label">
+        <input id="code" class="normal-text-input" type="text" formControlName="code" pInputText>
+        <label for="code">Code</label>
+      </span>
+    </div>
+  </div>
+  <div class="p-col">
+    <div>
+      <span class="ui-float-label">
+        <input id="englishName" class="normal-text-input" type="text" formControlName="nameFl" pInputText>
+        <label for="englishName">English Name</label>
+      </span>
+    </div>
+  </div>
+  <div class="p-col">
+    <div>
+      <span class="ui-float-label">
+        <input id="arabicName" class="normal-text-input" type="text" formControlName="nameSl" pInputText>
+        <label for="arabicName" class="input-float-label">Arabic Name</label>
+      </span>
+    </div>
+  </div>
+</div>
+
+<div class="p-grid p-justify-start dialog-content">
+  <div class="p-col-1">
+    <div class="dialog-button-wrapper">
+      <button pButton type="button" label="Save" (click)="close(form.value)" [disabled]="!this.form.valid" class="ui-button-raised dialog-button"></button>
+    </div>
+
+  </div>
+  <div class="p-col-2">
+    <div class="dialog-button-wrapper">
+      <button pButton type="button" label="Save&Close" (click)="close(form.value)" [disabled]="!this.form.valid" class="ui-button-raised dialog-button"></button>
+    </div>
+
+  </div>
+  <div class="p-col-1">
+    <div class="dialog-button-wrapper">
+      <button pButton type="button" (click)="close()" label="Cancel" class="ui-button-raised ui-button-danger dialog-button"></button>
+    </div>
+  </div>
+</div>

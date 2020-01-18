@@ -1,0 +1,62 @@
+<div class="ui-g ui-fluid" [formGroup]="form">
+  <div class="ui-g-12 ui-md-6">
+    <div>
+      <span class="ui-float-label">
+        <p-calendar id="startdate" formControlName="startDate" [showIcon]="true"></p-calendar>
+        <label for="startdate">Start Date</label>
+      </span>
+    </div>
+  </div>
+  <div class="ui-g-12 ui-md-6">
+    <div>
+      <span class="ui-float-label">
+        <p-calendar id="enddate" formControlName="endDate" [showIcon]="true"></p-calendar>
+        <label for="enddate">End Date</label>
+      </span>
+    </div>
+  </div>
+  <div class="ui-g-12 ui-md-6">
+    <div>
+      <span class="ui-float-label">
+        <p-dropdown placeholder="Select a holiday" filter="true" [showClear]="true" [options]="holidays"
+          formControlName="holidayId" optionLabel="publicHolidayNameFL">
+        </p-dropdown>
+      </span>
+    </div>
+  </div>
+  <div class="ui-g-12 ui-md-6">
+    <div>
+      <span class="ui-float-label">
+        <p-dropdown placeholder="Select a country" filter="true" [showClear]="true" [options]="countries"
+          formControlName="countryId" optionLabel="nameFl">
+        </p-dropdown>
+      </span>
+    </div>
+  </div>
+  <div class="ui-g-12 ui-md-12">
+    <div>
+      <span class="ui-float-label">
+        <textarea  placeholder="notes" style="width: 100%;"  [rows]="3" formControlName="notes" pInputTextarea
+          autoResize="autoResize"></textarea>
+      </span>
+    </div>
+  </div>
+</div>
+
+
+<div class="p-grid p-justify-start dialog-content">
+  <div class="p-col-1">
+    <div class="dialog-button-wrapper">
+      <button pButton type="button" label="Save" (click)="close(form.value)" [disabled]="!this.form.valid"
+        class="ui-button-raised dialog-button"></button>
+    </div>
+
+  </div>
+  <div class="p-col-2">
+    <div class="dialog-button-wrapper">
+      <button pButton type="button" label="Save&Close" (click)="close(form.value)" [disabled]="!this.form.valid"
+        class="ui-button-raised dialog-button"></button>
+    </div>
+
+  </div>
+</div>

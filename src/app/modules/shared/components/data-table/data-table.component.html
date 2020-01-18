@@ -1,0 +1,181 @@
+<p-table #dt [resizableColumns]="true" [columns]="selectedColumns" [value]="tableCore.tableData"
+  [rows]="tableCore.pageOptions.limit" [dataKey]="id" [reorderableColumns]="true" [lazy]="true"
+  (onSort)="customSort($event)" (onColReorder)="saveColumnsOrder($event)" [className]="'tableClass' | translate">
+
+  <ng-template pTemplate="caption">
+
+    <div class="row p-2 mt-2">
+
+      <div [className]="'tableNameDir' | translate">
+        {{ tableData.name | translate}}
+      </div>
+
+      <div [className]="'tableIconDir' | translate">
+
+        <button pButton class="mx-2" icon="pi pi-plus" (click)="addRow()"></button>
+        <button pButton class="mx-2" icon="pi pi-cog"></button>
+        <!-- <mat-menu #menu="matMenu" xPosition="before">
+          <ng-container *ngFor="let column of columns; let i = index">
+            <div class="mat-menu-item" style="overflow: visible;">
+              <mat-checkbox [disabled]="column.disable" (change)="showOrHideColumns(column)"
+                [(ngModel)]="column.selector">
+                {{column.header | translate}}</mat-checkbox>
+            </div>
+          </ng-container>
+        </mat-menu> -->
+
+        <button pButton icon="pi pi-print">
+        </button>
+        <!-- <mat-menu #beforeMenu="matMenu" xPosition="before">
+          <button mat-menu-item (click)="exportPdf()">PDF</button>
+          <button mat-menu-item (click)="exportExcel()">Excel</button>
+        </mat-menu> -->
+      </div>
+
+    </div>
+
+  </ng-template>
+
+  <ng-template pTemplate="header" let-columns>
+
+    <tr>
+      <th style="width: 75px;">{{'serial' | translate}}</th>
+
+      <th *ngFor="let col of columns" [pSortableColumn]="col.field" pReorderableColumn
+        [pSortableColumnDisabled]="!col.sort">
+        {{ col.header | translate}}
+        <p-sortIcon [field]="col.field" *ngIf="col.sort"></p-sortIcon>
+      </th>
+
+      <th *ngIf="actions">
+        {{ 'actions' | translate }}
+      </th>
+
+    </tr>
+
+    <tr class="search-controls">
+
+      <th></th>
+
+      <th *ngFor="let col of columns">
+
+        <div class="text" *ngIf="!col.filterMode || col.filterMode === 'text'">
+          <input pInputText data-placeholder="{{ 'search' | translate}} {{   col.header  | translate}}"
+            *ngIf="!(col.field === 'action')" type="text" style="width: 100%; padding: 6px"
+            (input)="columnSearchHandle($event.target.value, col.field)" />
+        </div>
+
+        <div *ngIf="col.filterMode && col.filterMode === 'dropdown'">
+
+          <p-multiSelect appendTo="body" #sel [options]="col.filterDropdown"
+            (onChange)="columnSearchHandle(sel.value, col.dropdownFilterName)" optionLabel="nameFl">
+          </p-multiSelect>
+
+          <!-- <mat-select #sel multiple (valueChange)="columnSearchHandle(sel.value, col.dropdownFilterName)">
+            <mat-option *ngFor="let item of col.filterDropdown" [value]="item.id">
+              {{ localize.lang =='en' ? item.nameFl : item.nameSl }}</mat-option>
+          </mat-select> -->
+        </div>
+
+        <div *ngIf="col.filterMode && col.filterMode === 'check'">
+          <p-dropdown appendTo="body" [options]="dropDownOptions" #checkSel
+            (valueChange)="columnSearchHandle(checkSel.value, col.field)" optionLabel="name">
+          </p-dropdown>
+
+          <!-- <mat-select #checkSel (valueChange)="columnSearchHandle(checkSel.value, col.field)">
+            <mat-option [value]="">
+              {{ 'all' | translate }}
+            </mat-option>
+            <mat-option [value]="1">
+              {{ 'checked' | translate }}
+            </mat-option>
+            <mat-option [value]="0">
+              {{ 'unChecked' | translate }}
+            </mat-option>
+          </mat-select> -->
+        </div>
+
+        <div *ngIf="col.filterMode && col.filterMode === 'date'">
+          <p-calendar appendTo="body" dateFormat="yy-mm-dd" (onSelect)="columnSearchHandle($event.value, col.field)">
+          </p-calendar>
+
+          <!-- <mat-form-field style="width: 100%;">
+            <input matInput [matDatepicker]="dp3" data-placeholder="{{ 'Date'  | translate}}"
+              (dateChange)="columnSearchHandle($event.value, col.field)">
+            <mat-datepicker-toggle matSuffix [for]="dp3"></mat-datepicker-toggle>
+            <mat-datepicker #dp3></mat-datepicker>
+          </mat-form-field> -->
+        </div>
+      </th>
+      <th *ngIf="actions"></th>
+    </tr>
+  </ng-template>
+
+  <ng-template pTemplate="body" let-rowData let-columns="columns" let-rowIndex="rowIndex">
+    <tr [pSelectableRow]="rowData">
+
+      <td>
+        <div *ngIf="tableCore.pageOptions.offset === 0" class="loader"></div>
+        <div *ngIf="tableCore.pageOptions.offset !== 0">
+          {{(rowIndex + 1) + (tableCore.pageOptions.offset - 2) * tableCore.pageOptions.limit  }}</div>
+      </td>
+
+      <td *ngFor="let col of columns; let i = index">
+        <div *ngIf="!col.editable">
+          <div *ngIf="col.filterMode === 'date';">
+            <div *ngIf="col.filterMode === 'date';">
+              {{ rowData[col.field] | date: ('dateformat' | translate) }}
+            </div>
+          </div>
+          <div *ngIf="col.filterMode === 'check';" style="text-align: center;">
+            <p-checkbox [(ngModel)]="rowData[col.field]" [disabled]="true"></p-checkbox>
+          </div>
+          <div *ngIf="col.filterMode !== 'date' && col.filterMode !== 'check'">
+            {{ rowData[col.field] }}
+          </div>
+
+        </div>
+      </td>
+
+      <td *ngIf="actions">
+
+        <span *ngFor="let action of actions">
+          <span *ngIf="action.isEdit" class="iconPadding">
+            <i style="cursor: pointer;" class="pi pi-user-edit" style="font-size: 3em" (click)="addRow(rowData)"></i>
+          </span>
+
+          <span *ngIf="action.isView" class="iconPadding">
+            <i style="cursor: pointer;" class="pi pi-info-circle" style="font-size: 3em"
+              (click)="openViewDetail(rowData)"></i>
+          </span>
+
+          <span *ngIf="action.isDelete" class="iconPadding">
+
+            <i style="cursor: pointer;" class="pi pi-trash" style="font-size: 3em"
+              (click)="openDeleteDialog(rowData.id)"></i>
+          </span>
+          <!-- <span *ngIf="!action.isEdit && !action.isDelete" class="iconPadding">
+            <mat-icon style="cursor: pointer;" color="action.color" (click)="action.call(rowData)">
+              {{ action.icon }}
+            </mat-icon>
+          </span> -->
+        </span>
+      </td>
+    </tr>
+  </ng-template>
+
+  <ng-template pTemplate="emptymessage" let-columns>
+    <tr>
+      <td style="text-align: center; color: red; font-size: 18px;" [attr.colspan]="columns.length + 2">
+        {{'noData' | translate}}
+      </td>
+    </tr>
+  </ng-template>
+
+</p-table>
+
+<div class="custom-paginator">
+  <p-paginator [rows]="tableCore.pageOptions.limit" (onPageChange)="setPage($event)"
+    [rowsPerPageOptions]="[3, 5, 10, 20, 50, 100]" [totalRecords]="tableCore.pageOptions.count">
+  </p-paginator>
+</div>

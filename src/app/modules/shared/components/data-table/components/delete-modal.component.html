@@ -1,0 +1,10 @@
+<div [className]="'textAlign' | translate" [dir]="dir | translate">
+  <h1 mat-dialog-title>{{'DeleteHeader' | translate}}</h1>
+  <div mat-dialog-content>
+    <p>{{'DeleteBody' | translate}}</p>
+  </div>
+  <div mat-dialog-actions>
+    <button mat-button (click)="onNoClick()">{{'no' | translate}}</button>
+    <button color="warn" mat-button (click)="onYesClick()">{{'yes' | translate}}</button>
+  </div>
+</div>

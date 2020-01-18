@@ -1,0 +1,341 @@
+{
+    "HOME": {
+      "TITLE": "مرحبا بك {{value}}",
+      "SELECT": "اختر اللغه",
+      "columnName": {
+        "fixedColumnName": {
+          "indexColumn": "م.",
+          "editCoLumn": "تعديل"
+        }
+      }
+    },
+    "lookup": {
+      "id": "الرقم التعريفى",
+      "country": "الدولة",
+      "code": "كود الدولة",
+      "nameFl": "الاسم الانجليزى",
+      "nameSl": "الاسم العربى",
+      "createdDate": "تاريخ الاضافة",
+      "active": "فعال",
+      "title":"الدول"
+    },
+    "groups": {
+      "id": "الرقم التعريفي",
+      "code": "كود المجموعة",
+      "groupFl": "الاسم الانجليزي",
+      "groupSl": "الاسم العربي",
+      "active": "فعال",
+      "title":"المجموعات"
+    },
+    "adminmanger": {
+      "number": "رقم الموظف",
+      "adminname": "مدير الادارات",
+      "civilid": "الرقم المدني",
+      "employeename": "اسم الموظف",
+      "startdate": "تاريخ البدايه",
+      "enddate": "تاريخ النهايه"
+    },
+    "usermangments": {
+      "employeeNO": "رقم الموظف",
+      "employeeNameSl": "اسم الموظف الاول",
+      "groupNameSL": "اسم الموظف الثاني",
+      "active": "نشط",
+      "expireDate": "تاريخ الانتهاء",
+      "title":"إدارة المستخدمين"
+    },
+    "employees": {
+      "employeeNumber": "رقم الموظف",
+      "employeeName": "اسم الموظف",
+      "civilId": "الرقم المدني",
+      "genderName": "النوع",
+      "startDate": "تاريخ البداية",
+      "serviceName": "الخدمة",
+      "title":"الموظفين"
+    },
+    "fixedDuties": {
+      "dutyTypeName": "نوع الدوام",
+      "dutyDescriptionFl": "وصف الدوام بالعربي",
+      "dutyDescriptionSl": " وصف الدوام ب",
+      "hasHoliday": "لديه اجازه ",
+      "includeOverTime": "شامل الوقت الاضافي "
+    },
+    "freeDuties": {
+      "DutyDescriptionFl": "وصف الدوام بالعربي",
+      "DutyDescriptionSl": "وصف الدوام ب",
+      "HasHoliday": " لديه اجازه",
+      "IncludeOverTime": "شامل الوقت الاضافي"
+    },
+    "emergencyAllowances": {
+      "typeLocationOrDepartment": "النوع موقع او قسم",
+      "description": "الوصف",
+      "exemption": "الاعفاء",
+      "startDate": "تاريخ البداية",
+      "endDate": "تاريخ النهاية"
+    },
+    "employeePermissions": {
+      "employeeNumber": "رقم الموظف",
+      "employeeName": "اسم الموظف",
+      "civilId": "الرقم المدني",
+      "permissionType": "نوع التصريح",
+      "permissionDate": "تاريخ التصريح",
+      "startTime": "وقت البداية",
+      "endTime": "وقت النهاية"
+    },
+    "employeeLeaves": {
+      "employeeNumber": "رقم الموظف",
+      "employeeName": "اسم الموظف",
+      "civilId": "الرقم المدني",
+      "leaveType": " نوع الاجازه",
+      "startDate": "تاريخ البدايه",
+      "endDate": "تاريخ النهايه",
+      "period": "الفترة",
+      "balance": "رصيد الحساب",
+      "title":"اجازات الموظفين"
+    },
+    "employeeAlowances": {
+      "employeeNumber": "رقم الموظف",
+      "employeeNameFl": "اسم الموظف",
+      "civilId": "الرقم المدني",
+      "allowanceNameSl": "السماحية",
+      "startDate": "تاريخ البدايه",
+      "endDate": "تاريخ النهايه",
+      "allowanceIn": "سماحية الدخول",
+      "allowanceOut": "سماحية الخروج",
+      "daysFl": "الايام",
+      "title":"سماحيات الموظفين"
+    },
+    "rotatedDuties": {
+      "code": "الكود",
+      "rotatedDescriptionFl": " الدوام المتعاقب الاسم الاول ",
+      "rotatedDescriptionSl": " الدوام المتعاقب الاسم الثاني ",
+      "includeOverTime": "شامل وقت اضافي",
+      "startTime": "بدايه الفتره",
+      "endTime": "نهايه الفتره",
+      "allowanceIn": "سماحيه الدخول",
+      "allowanceOut": "سماحيه الخروج",
+      "allowBreak": "وقت الراحه"
+    },
+    "fullDayPermissions": {
+      "code": "كود",
+      "fulldayPermissionFL": "اسم أ",
+      "fulldayPermissionSL": "اسم ب"
+    },
+    "countries": {
+      "code": "كود",
+      "nameFl": "اسم أ",
+      "nameSl": "اسم ب"
+    },
+    "religion": {
+      "code": "كود",
+      "descriptionFl": "وصف أ",
+      "descriptionSl": "وصف ب"
+    },
+    "contractTypes": {
+      "contractTypeFL": "اسم أ",
+      "contractTypeSL": "اسم ب"
+    },
+    "PartialPermissionTypes": {
+      "code": "كود",
+      "partialPermissionFL": "اسم أ",
+      "partialPermissionSL": "اسم ب",
+      "countryName": "اسم الدولة",
+      "balance": "الرصيد",
+      "numberPerMonth": "عدد المرات في الشهر",
+      "period": "الفترة",
+      "calculatePermissionDutyAllowance": "حساب سماحية الاستئذان للدوام",
+      "calculatePermissionDutyAllowanceCancelInRamadan": "الغاء في رمضان",
+      "calculatePermissionEmployeeAllowances": "حساب سماحية الاستئذان للموظف",
+      "calculatePermissionEmployeeAllowancesCancelInRamadan": "الغاء في رمضان"
+    },
+    "overtimeDates": {
+      "startDate": "تاريخ البداية",
+      "endDate": "تاريخ النهاية"
+    },
+    "locations": {
+      "code": "كود",
+      "locationFL": "اسم أ",
+      "locationSL": "اسم ب",
+      "description": "الوصف",
+      "country Name": "اسم الدولة"
+    },
+    "leaveRegulations": {
+      "leaveNameFl": "اسم أ",
+      "leaveNameSl": "اسم ب",
+      "countryName": "اسم الدولة",
+      "balancePerYear": "الرصيد في السنة",
+      "leaveTypeName": "نوع الاجازة"
+    },
+    "dutysettings": {
+      "startDate": "تاريخ البداية",
+      "endDate": "تاريخ النهاية",
+      "dutyStatusName": "وصف الحالة",
+      "startTime": "وقت البداية",
+      "endTime": "وقت النهاية",
+      "weekEndName": "اسم نهاية الاسبوع",
+      "restDayName": "اسم يوم الراحة",
+      "allowanceIn": "سماحية الدخول",
+      "allowanceOut": "سماحية الخروج",
+      "allowLaunch": "مسموح باستراحة الغداء",
+      "allowHalfDay": "مسموح بنصف يوم"
+    },
+    "employeeFulldayPermissions": {
+      "employeeNumber": "رقم الموظف",
+      "employeeNameFl": "اسم الموظف",
+      "civilId": "الرقم المدني",
+      "fulldayPermissionNameSl": "تصريح يوم كامل",
+      "startDate": "تاريخ البدايه",
+      "endDate": "تاريخ النهايه",
+      "daysFl": "الايام",
+      "title":"اذونات يوم كامل للموظفين"
+    },
+    "holidayDates": {
+      "holidayName": "اسم الاجازة",
+      "startDate": "تاريخ البداية",
+      "endDate": "تاريخ النهاية",
+      "countryName": "اسم الدولة"
+    },
+    "holidays": {
+      "code": "كود",
+      "publicHolidayNameFL": "اسم الاجازة الاول",
+      "publicHolidayNameSL": "اسم الاجازة الثاني"
+    },
+    "jobDegrees": {
+      "code": "كود",
+      "jobDegreeFL": "اسم أ",
+      "jobDegreeSL": "اسم ب"
+    },
+    "jobs": {
+      "code": "كود",
+      "jobFL": "اسم أ",
+      "jobSL": "اسم ب",
+      "exemptionFromFingerprint": "إعفاء من التوقيع"
+    },
+    "lateRegulations": {
+      "startDate": "تاريخ البداية",
+      "endDate": "تاريخ النهاية",
+      "lateRegulationFL": "اسم أ",
+      "lateRegulationSL": "اسم ب",
+      "deductionGroupTypeName": "اسم مجموعة الخصم"
+    },
+    "nationalities": {
+      "code": "كود",
+      "nationalityFL": "اسم أ",
+      "nationalitySL": "اسم ب"
+    },
+    "qualifications": {
+      "qualificationTypeFl": "اسم أ",
+      "qualificationTypeSl": "اسم ب"
+    },
+    "allowances": {
+      "allowanceTypeNameSl": "اسم نوع الصلاحية",
+      "allowanceNameFl": "اسم السماحية الاول",
+      "allowanceNameSl": "اسم الصلاحية الثاني"
+    },
+    "teams": {
+      "code": "الكود",
+      "teamNameFl": "اسم الفريق الاول",
+      "teamNameSl": "اسم الفريق الثاني"
+    },
+    "leavetypes": {
+      "code": "الكود",
+      "leaveTypeFl": "انواع الاجازات الاول",
+      "leaveTypeSL": "انواع الاجازات الثاني"
+    },
+    "previousLeavesBalances": {
+      "employeeNumber": "رقم الموظف",
+      "employeeNameFl": "اسم الموظف",
+      "leaveNameFl": "أسم الاجازة",
+      "previousBalance": "الرصيد السابق",
+      "year": "السنة"
+    },
+    "allowanceSettings": {
+      "startDate": "تاريخ البدايه",
+      "endDate": "تاريخ النهايه",
+      "replaceDutyAllowanceIn": "استبدال دوام سماحية الدخول",
+      "replaceDutyAllowanceOut": "استبدال دوام سماحية الخروج",
+      "mergingAllowances": "دمج السماحيات",
+      "cancelInRamadan": "الغاء في رمضان",
+      "notes": "ملاحظات"
+    },
+    "EmployeeLogSheet": {
+      "employeeNumber": "رقم الموظف",
+      "logDatetime": "تاريخ الحركة",
+      "event": "الحركة",
+      "terminalName": "اسم الجهاز",
+      "serialNumber": "رقم الجهاز",
+      "notes": "ملاحظات"
+    },
+    "employeeProfiles": {
+      "name": "الاسم",
+      "startDate": "تاريخ البداية",
+      "endDate": "تاريخ النهاية"
+    },
+    "employeeLogManual": {
+      "employeeNumber": "رقم الموظف",
+      "employeeName": "اسم الموظف",
+      "civilId": "الرقم المدني",
+      "logType": "نوع الحركة",
+      "logDate": "تاريخ الحركة",
+      "logTime": "وقت الحركة"
+    },
+    "organizations": {
+      "organizationNameSl": "اسم المنظومه",
+      "nickName": "اسم الكنيه",
+      "registrationEmail": "ايميل التسجيل"
+    },
+    "hourlyRotated": {
+      "code": "كود المجموعة",
+      "groupnamefl": "اسم المجموعة الاول",
+      "groupnamesl": "اسم المجموعة الثاني",
+      "startdate": "تاريخ البداية",
+      "enddate": "تاريخ النهاية",
+      "starttime": "وقت البداية",
+      "workinghours": "ساعات العمل",
+      "resthours": "ساعات الراحة",
+      "title": "الدوام الحر بالساعات"
+    },
+    "dailyRotatedSchedules": {
+      "code": "كود المجموعة",
+      "groupDescriptionFl": "وصف المجموعة الاول",
+      "groupDescriptionSl": "وصف المجموعة الثاني",
+      "startDate": "تاريخ البداية",
+      "endDate": "تاريخ النهاية",
+      "note": "الملاحظات",
+      "title": "جداول الدوامات اليومية"
+    },
+    "search": "ابحث ب ",
+    "Id": "الرقم التعريفي",
+    "id": "الرقم التعريفى",
+    "All": "الكل",
+    "all": "الكل",
+    "actions": "خيارات",
+    "Actions": "خيارات",
+    "Date": "اختر تاريخ",
+    "serial": "مسلسل",
+    "noData": "لاتوجد بيانات",
+    "addNew": "اضافة جديد",
+    "selectColumn": "اختر عمود",
+    "exporttrans": "تصدير",
+    "edit": "تعديل",
+    "details": "عرض التفاصيل",
+    "deletetrans": "حذف",
+    "tableNameDir": "col-lg-6 text-right",
+    "tableIconDir": "col-lg-6 text-left",
+    "tableClass": "tableClassRight",
+    "dateformat": "y/M/d",
+    "checked": "مفعل",
+    "unChecked": "غير مفعل",
+    "dir": "rtl",
+    "float": "floatright",
+    "saveclose": "حفظ واغلاق",
+    "save": "حفظ",
+    "DeleteHeader": "تاكيد الحذف",
+    "DeleteBody": "هل تريد الحذف بالفعل ؟",
+    "no": "لا",
+    "yes": "نعم",
+    "textAlign": "textAlignRight",
+    "savesuccessfully": "تم الاضافة بنجاح",
+    "updatesuccessfully": "تم التعديل بنجاح",
+    "deletesuccessfully": "تم الحذف بنجاح",
+    "note": "ملاحــظات"
+  }

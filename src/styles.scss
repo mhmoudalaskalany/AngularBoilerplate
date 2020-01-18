@@ -1,0 +1,26 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~ngx-toastr/toastr';
+
+/* General Styles*/
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* End General Styles */
+
+/*Genral Controls Styles*/
+
+.normal-text-input {
+  width: 100% !important;
+  margin: 10px 0;
+}
+.input-float-label {
+  padding: 3px;
+}
+.dialog-content {
+  padding: 10px;
+}
+
+/* End General Controls Styles */
